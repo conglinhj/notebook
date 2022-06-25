@@ -1,0 +1,18 @@
+<a href="/users/create">new</a>
+
+<table>
+  <thead>
+    <th>_id</th>
+    <th>name</th>
+    <th>age</th>
+  </thead>
+  <tbody>
+    {{#each users}}
+    <tr>
+      <td><a href="users/{{this._id}}">{{this._id}}</a></td>
+      <td>{{this.name}}</td>
+      <td>{{this.age}}</td>
+    </tr>
+    {{/each}} 
+  </tbody>
+</table>

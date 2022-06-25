@@ -1,0 +1,18 @@
+<a href="/notes/create">new</a>
+
+<table>
+  <thead>
+    <th>_id</th>
+    <th>title</th>
+    <th>content</th>
+  </thead>
+  <tbody>
+    {{#each notes}}
+    <tr>
+      <td><a href="notes/{{this._id}}">{{this._id}}</a></td>
+      <td>{{this.title}}</td>
+      <td>{{this.content}}</td>
+    </tr>
+    {{/each}} 
+  </tbody>
+</table>
